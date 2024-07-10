@@ -34,8 +34,6 @@ jobs:
           args: >
             -Dsonar.projectKey=patrones
             -Dsonar.sources=src
-            -Dsonar.java.binaries=src/AbstractFactory
-            -X  # Activar el logging detallado para depuración
 
       # Si deseas que el trabajo falle cuando el Quality Gate esté en rojo, descomenta las siguientes líneas.
       # - name: Quality Gate
