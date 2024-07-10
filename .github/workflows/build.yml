@@ -34,7 +34,8 @@ jobs:
           args: >
             -Dsonar.projectKey=patrones
             -Dsonar.sources=src
-
+            -X
+            
       # Si deseas que el trabajo falle cuando el Quality Gate esté en rojo, descomenta las siguientes líneas.
       # - name: Quality Gate
       #   uses: sonarsource/sonarqube-quality-gate-action@master
