@@ -30,7 +30,12 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-    
+        with:
+          args: >
+            -Dsonar.projectKey=patrones
+            -Dsonar.sources=src
+            -Dsonar.java.binaries=src/AbstractFactory
+            -X  # Activar el logging detallado para depuración
 
       # Si deseas que el trabajo falle cuando el Quality Gate esté en rojo, descomenta las siguientes líneas.
       # - name: Quality Gate
