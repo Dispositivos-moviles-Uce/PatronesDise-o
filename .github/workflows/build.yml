@@ -30,11 +30,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        with:
-          args: >
-            -Dsonar.projectKey=your_project_key
-            -Dsonar.sources=src
-            -Dsonar.java.binaries=build/classes
+    
 
       # Si deseas que el trabajo falle cuando el Quality Gate esté en rojo, descomenta las siguientes líneas.
       # - name: Quality Gate
